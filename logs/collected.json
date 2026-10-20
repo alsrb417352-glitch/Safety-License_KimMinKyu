@@ -1,0 +1,730 @@
+{
+ "items": [
+  {
+   "variable": "노인교통사고",
+   "query": "부문별 노인 교통사고 통계",
+   "page": "/data/15094162/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a18848da791abd88e20",
+   "search_candidate_id": "cand_01a15a18848ed960c5b6be44",
+   "source_id": "src_01a15a188fe858ded42a8924",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국도로교통공단",
+    "published": {
+     "value": "2021-11-08",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2025-07-29",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a188ff329a027e3b524"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a188ff44b1f238fdea7",
+     "status": "done",
+     "raw_version_id": "ver_01a15a189668ddab7af6df99",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a18968d07090ac5fa94"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "고령운전자사고",
+   "query": "65세이상 노인 및 노인운전자 교통사고 통계",
+   "page": "/data/15094173/fileData.do",
+   "ok": false,
+   "search_run_id": "srun_01a15a18a2995bd86c9840b2",
+   "search_candidate_id": "cand_01a15a18a299345d4ad4e6a4",
+   "source_id": "src_01a15a18adbc55735b02d15c",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국도로교통공단",
+    "published": {
+     "value": "2021-11-08",
+     "basis": "페이지 표시 '등록일'"
+    },
+    "modified": {
+     "value": "2025-07-29",
+     "basis": "페이지 표시 '수정일'"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [],
+   "jobs": []
+  },
+  {
+   "variable": "전체교통사고",
+   "query": "시도 시군구별 교통사고 통계",
+   "page": "/data/15070297/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a18bad560ef4642d58b",
+   "search_candidate_id": "cand_01a15a18bad5a4328a91de90",
+   "source_id": "src_01a15a18c5260d7f11522a54",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국도로교통공단",
+    "published": {
+     "value": "2026-08-04",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-08-04",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a18c534544665faac53"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a18c536b332d4e16721",
+     "status": "done",
+     "raw_version_id": "ver_01a15a18cba40bea66533ac9",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a18cbd0493931371cd5"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "고령인구",
+   "query": "지역별 연령별 주민등록 인구현황",
+   "page": "/data/3033304/fileData.do",
+   "ok": false,
+   "search_run_id": "srun_01a15a18d8aa88dcf2c1e825",
+   "search_candidate_id": "cand_01a15a18d8aa6d3b3627d3ec",
+   "source_id": "src_01a15a18e31e052f1b16298a",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "행정안전부",
+    "published": {
+     "value": "2019-07-19",
+     "basis": "페이지 표시 '등록일'"
+    },
+    "modified": {
+     "value": "2025-05-09",
+     "basis": "페이지 표시 '수정일'"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [],
+   "jobs": []
+  },
+  {
+   "variable": "면허반납",
+   "query": "시도 경찰청별 고령운전자 자진반납 현황",
+   "page": "/data/15065567/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a18ef33bd787933c6b7",
+   "search_candidate_id": "cand_01a15a18ef33c8dc4c23d872",
+   "source_id": "src_01a15a18f5b1a664d24bf376",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "경찰청",
+    "published": {
+     "value": "2024-05-09",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2025-11-10",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a18f5bb475e56edacbd"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a18f5be5bbc1bf9aec3",
+     "status": "done",
+     "raw_version_id": "ver_01a15a18fc366b04c381348d",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a18fc635b8c2e2776d5"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "면허반납",
+   "query": "운전면허 자진반납 연령별 시도청별 취소처분현황",
+   "page": "/data/15114381/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a1906ddd18f1fcfde2b",
+   "search_candidate_id": "cand_01a15a1906dede8720e3e3fa",
+   "source_id": "src_01a15a1911ea3abce7d58318",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "경찰청",
+    "published": {
+     "value": "2026-04-10",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-04-10",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a1911f3e10edfd94537"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a1911f43fcb8b36c73c",
+     "status": "done",
+     "raw_version_id": "ver_01a15a1916d104a1764658c4",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a1916ff239a00b03433"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "고령면허소지자",
+   "query": "운전면허소지자 연령별 현황",
+   "page": "/data/15048426/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a19230c6acdd3dd8fac",
+   "search_candidate_id": "cand_01a15a19230d67cbb3995dd5",
+   "source_id": "src_01a15a192e562e65aaacf2a0",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "경찰청",
+    "published": {
+     "value": "2021-06-23",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2025-05-09",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a192e60a12659638c58"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a192e62cee9eb28766c",
+     "status": "done",
+     "raw_version_id": "ver_01a15a1934e86c5e18941d5b",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a19351585f667030139"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "노인보호구역",
+   "query": "전국노인장애인보호구역정보",
+   "page": "/data/15118670/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a194147698225f84ecf",
+   "search_candidate_id": "cand_01a15a194147498d6a3f0974",
+   "source_id": "src_01a15a194ba4aca9a4a392b5",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "충청남도",
+    "published": {
+     "value": "2025-11-30",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-09-13",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a194bb2c611ef104979"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a194bb414ebe4b5484e",
+     "status": "done",
+     "raw_version_id": "ver_01a15a19546112fac45739fc",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a19549b719b9c4479aa"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "어린이보호구역",
+   "query": "어린이보호구역 지정 건수 현황",
+   "page": "/data/15038624/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a1961599dc1e721dcfd",
+   "search_candidate_id": "cand_01a15a19615ad50c67c3e34d",
+   "source_id": "src_01a15a1968ee9e923e266eaa",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "경찰청",
+    "published": {
+     "value": "2026-07-20",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-07-22",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a1968f9561b102ae73a"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a1968fb699d560cc438",
+     "status": "done",
+     "raw_version_id": "ver_01a15a196f73caac1e7bc935",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a196fa6c9ec909f85c9"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "대중교통공급",
+   "query": "전국 대중교통 버스정류장 현황",
+   "page": "/data/15066754/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a197b9e0c19b96fef2c",
+   "search_candidate_id": "cand_01a15a197b9fbc91713cf452",
+   "source_id": "src_01a15a1986fb709005e43c03",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국교통안전공단",
+    "published": {
+     "value": "2026-07-29",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-07-29",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a198704355a295f47fc"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a198706ddc9a636b21b",
+     "status": "done",
+     "raw_version_id": "ver_01a15a198d81befe7d8e585e",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a198daffe2c55ef30ae"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "자동차주행거리",
+   "query": "용도별 차종별 시군구별 일평균 자동차 주행거리",
+   "page": "/data/15088483/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a1a0ad7ed58debb4b15",
+   "search_candidate_id": "cand_01a15a1a0ad8878acdc4ba50",
+   "source_id": "src_01a15a1a160f79bd90009716",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국교통안전공단",
+    "published": {
+     "value": "2021-09-14",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2025-08-01",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a1a1619cdd145a5ad2c"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a1a161b8a537b245f01",
+     "status": "done",
+     "raw_version_id": "ver_01a15a1a1d63b5f2766a54e3",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a1a1d8f5e1fceb2eacf"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "노인교통사고",
+   "query": "사상자 연령층별 성별 교통사고 통계",
+   "page": "/data/15070293/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15a1a2bf9809cc17476a4",
+   "search_candidate_id": "cand_01a15a1a2bf9a0eb42c47e11",
+   "source_id": "src_01a15a1a364b294e977aae0d",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국도로교통공단",
+    "published": {
+     "value": "2026-08-04",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-08-04",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15a1a36551a2885606279"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15a1a3657b4764ba08119",
+     "status": "done",
+     "raw_version_id": "ver_01a15a1a3b2aec7c700e18f1",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15a1a3b5478c52ea2a669"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "고령운전자사고",
+   "query": "65세이상 노인 및 노인운전자 교통사고 통계",
+   "page": "/data/15094173/fileData.do",
+   "ok": false,
+   "search_run_id": "srun_01a15b806a59f168511a0e1e",
+   "search_candidate_id": "cand_01a15b806a5a22f35949f87a",
+   "source_id": "src_01a15b8074bcf22ecce4d8e5",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국도로교통공단",
+    "published": {
+     "value": "2021-11-08",
+     "basis": "페이지 표시 '등록일'"
+    },
+    "modified": {
+     "value": "2025-07-29",
+     "basis": "페이지 표시 '수정일'"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [],
+   "jobs": []
+  },
+  {
+   "variable": "고령인구",
+   "query": "지역별 연령별 주민등록 인구현황",
+   "page": "/data/3033304/fileData.do",
+   "ok": false,
+   "search_run_id": "srun_01a15b8081dcbf95c9cc4480",
+   "search_candidate_id": "cand_01a15b8081dc292073ff1d92",
+   "source_id": "src_01a15b808b8f9fcd43b11e32",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "행정안전부",
+    "published": {
+     "value": "2019-07-19",
+     "basis": "페이지 표시 '등록일'"
+    },
+    "modified": {
+     "value": "2025-05-09",
+     "basis": "페이지 표시 '수정일'"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [],
+   "jobs": []
+  },
+  {
+   "variable": "대중교통공급",
+   "query": "시군구별 정류장평균이용량",
+   "page": "/data/15162142/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15b809a342f5660c82861",
+   "search_candidate_id": "cand_01a15b809a342acfff888258",
+   "source_id": "src_01a15b80a55e5c6666326de4",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "국토교통부",
+    "published": {
+     "value": "2026-08-27",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-09-02",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15b80a5673a7eb5865568"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15b80a5692c9036da2819",
+     "status": "done",
+     "raw_version_id": "ver_01a15b80f8f0a7c6f58ea34f",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15b8102e2d24023af8675"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "고령인구",
+   "query": "지역별(행정동) 성별 연령별 주민등록 인구수",
+   "page": "/data/15097972/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15b810fe3bad1f41f2b53",
+   "search_candidate_id": "cand_01a15b810fe45008c798dd63",
+   "source_id": "src_01a15b812081034335e0d7fa",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "행정안전부",
+    "published": {
+     "value": "2026-10-02",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-10-02",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15b81209f8f7beb76aca3"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15b8120a262dd0ed32853",
+     "status": "done",
+     "raw_version_id": "ver_01a15b8140d3525ddbd48061",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15b8141ff92bb45abed36"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "대중교통공급",
+   "query": "전국 버스정류장 위치정보",
+   "page": "/data/15067528/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15b814d6c8f90d7689917",
+   "search_candidate_id": "cand_01a15b814d6cd7c818fcaf3f",
+   "source_id": "src_01a15b8157ce8c6e95078e48",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "국토교통부",
+    "published": {
+     "value": "2025-11-09",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2025-12-09",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15b8157dd3f2821ab0211"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15b8157e050b8028a7f9e",
+     "status": "done",
+     "raw_version_id": "ver_01a15b81dbfe38c7de711949",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15b81e587696a977dc66a"
+     ],
+     "error": null
+    }
+   ]
+  },
+  {
+   "variable": "고령운전자사고",
+   "query": "65세이상 노인 및 노인운전자 교통사고 통계",
+   "page": "/data/15094173/fileData.do",
+   "ok": false,
+   "search_run_id": "srun_01a15b8804ac60d71eb806e1",
+   "search_candidate_id": "cand_01a15b8804adc835ae6864f8",
+   "source_id": "src_01a15b880f14df0d8ec565a9",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국도로교통공단",
+    "published": {
+     "value": "2021-11-08",
+     "basis": "페이지 표시 '등록일'"
+    },
+    "modified": {
+     "value": "2025-07-29",
+     "basis": "페이지 표시 '수정일'"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [],
+   "jobs": []
+  },
+  {
+   "variable": "고령인구",
+   "query": "지역별 연령별 주민등록 인구현황",
+   "page": "/data/3033304/fileData.do",
+   "ok": false,
+   "search_run_id": "srun_01a15b881dfee90090d636a2",
+   "search_candidate_id": "cand_01a15b881dffe801cd909e21",
+   "source_id": "src_01a15b88288fb5520445582e",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "행정안전부",
+    "published": {
+     "value": "2019-07-19",
+     "basis": "페이지 표시 '등록일'"
+    },
+    "modified": {
+     "value": "2025-05-09",
+     "basis": "페이지 표시 '수정일'"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [],
+   "jobs": []
+  },
+  {
+   "variable": "자동차주행거리",
+   "query": "자동차 표시연비 정보",
+   "page": "/data/15083023/fileData.do",
+   "ok": true,
+   "search_run_id": "srun_01a15b8835b9b220dbb64a40",
+   "search_candidate_id": "cand_01a15b8835ba0fe4e190ae69",
+   "source_id": "src_01a15b88401b939fd2aba3a2",
+   "judgment": {
+    "org_identity": "official_registry_match",
+    "origin": "origin_via_catalog",
+    "producer": "한국에너지공단",
+    "published": {
+     "value": "2026-05-22",
+     "basis": "구조화 메타데이터 datePublished"
+    },
+    "modified": {
+     "value": "2026-05-22",
+     "basis": "구조화 메타데이터 dateModified"
+    },
+    "license": "이용허락범위 제한 없음",
+    "redistribution": "allowed_per_dataset_label"
+   },
+   "download_candidates": [
+    "fcand_01a15b8840256b2df215de79"
+   ],
+   "jobs": [
+    {
+     "job_id": "job_01a15b884027a74004bb2ae6",
+     "status": "done",
+     "raw_version_id": "ver_01a15b884a8af0cd2589e2a1",
+     "format": "csv",
+     "extraction": "tables_extracted",
+     "tables": [
+      "tbl_01a15b884ae63d89bc9bac94"
+     ],
+     "error": null
+    }
+   ]
+  }
+ ],
+ "request_id": "req_01a15a1875c1a23b61743e16",
+ "collection_id": "col_01a15a1875c16feb8588d930",
+ "trace_example": {
+  "secondary_source_id": "src_01a15b9d605f0b65a1c26bc0",
+  "origin_source_id": "src_01a15b9d7ab8ea655706eb7a",
+  "clues": [
+   "기관: 한국도로교통공단"
+  ],
+  "origin_title_candidate": "한국도로교통공단_부문별 노인 교통사고 통계"
+ }
+}
