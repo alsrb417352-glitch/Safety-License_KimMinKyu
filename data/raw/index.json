@@ -6,7 +6,7 @@
   "name": "도로교통공단_부문별_노인_교통사고(2018).csv",
   "rows": 229,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000002478547&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "한국도로교통공단, 「한국도로교통공단_부문별 노인 교통사고 통계 — 도로교통공단_부문별_노인_교통사고(2018).csv」, 공표 2021-11-08, 공공데이터포털 제공, https://www.data.go.kr/data/15094162/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a189668ddab7af6df99)",
+  "citation_ko": "한국도로교통공단, 「한국도로교통공단_부문별 노인 교통사고 통계 — 도로교통공단_부문별_노인_교통사고(2018).csv」, 공표 2021-11-08, 공공데이터포털 제공, https://www.data.go.kr/data/15094162/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a189668ddab7af6df99)",
   "raw_sha256": "c231d24c7f430addc5c938f7be8416b92d9a6dbebf1328005b5ee0bc5557daaf"
  },
  {
@@ -16,7 +16,7 @@
   "name": "한국도로교통공단_시도 시군구별 교통사고(2025).csv",
   "rows": 229,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003692669&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "한국도로교통공단, 「한국도로교통공단_시도 시군구별 교통사고 통계 — 한국도로교통공단_시도 시군구별 교통사고(2025).csv」, 공표 2026-08-04, 공공데이터포털 제공, https://www.data.go.kr/data/15070297/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a18cba40bea66533ac9)",
+  "citation_ko": "한국도로교통공단, 「한국도로교통공단_시도 시군구별 교통사고 통계 — 한국도로교통공단_시도 시군구별 교통사고(2025).csv」, 공표 2026-08-04, 공공데이터포털 제공, https://www.data.go.kr/data/15070297/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a18cba40bea66533ac9)",
   "raw_sha256": "077c48b46c23052ad63ab941c3ecc4a43d904d1567363db9467e36eafe67f363"
  },
  {
@@ -26,7 +26,7 @@
   "name": "경찰청_시도 경찰청별 고령운전자 자진반납 현황_2015~2024.csv",
   "rows": 18,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003518319&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "경찰청, 「경찰청_시도 경찰청별 고령운전자 자진반납 현황 — 경찰청_시도 경찰청별 고령운전자 자진반납 현황_2015~2024.csv」, 공표 2024-05-09, 공공데이터포털 제공, https://www.data.go.kr/data/15065567/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a18fc366b04c381348d)",
+  "citation_ko": "경찰청, 「경찰청_시도 경찰청별 고령운전자 자진반납 현황 — 경찰청_시도 경찰청별 고령운전자 자진반납 현황_2015~2024.csv」, 공표 2024-05-09, 공공데이터포털 제공, https://www.data.go.kr/data/15065567/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a18fc366b04c381348d)",
   "raw_sha256": "fb18e20cb377e4647089e3ba57ce901d6f89a736539706549fc240d5af239cc6"
  },
  {
@@ -36,7 +36,7 @@
   "name": "경찰청_운전면허 자진반납 연령별 시도청별 취소처분 현황_20251231.csv",
   "rows": 18,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003624118&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "경찰청, 「경찰청_운전면허 자진반납 연령별 시도청별 취소처분현황 — 경찰청_운전면허 자진반납 연령별 시도청별 취소처분 현황_20251231.csv」, 공표 2026-04-10, 공공데이터포털 제공, https://www.data.go.kr/data/15114381/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a1916d104a1764658c4)",
+  "citation_ko": "경찰청, 「경찰청_운전면허 자진반납 연령별 시도청별 취소처분현황 — 경찰청_운전면허 자진반납 연령별 시도청별 취소처분 현황_20251231.csv」, 공표 2026-04-10, 공공데이터포털 제공, https://www.data.go.kr/data/15114381/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a1916d104a1764658c4)",
   "raw_sha256": "8188e3dbfcff723a54b7b44ffefcecd4335a3429cd5dd4512d3e7d44b8e9dfc4"
  },
  {
@@ -46,7 +46,7 @@
   "name": "경찰청_운전면허소지자(연령별,대장별)현황_20201231.csv",
   "rows": 84,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003133650&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "경찰청, 「경찰청_운전면허소지자 연령별 현황 — 경찰청_운전면허소지자(연령별,대장별)현황_20201231.csv」, 공표 2021-06-23, 공공데이터포털 제공, https://www.data.go.kr/data/15048426/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a1934e86c5e18941d5b)",
+  "citation_ko": "경찰청, 「경찰청_운전면허소지자 연령별 현황 — 경찰청_운전면허소지자(연령별,대장별)현황_20201231.csv」, 공표 2021-06-23, 공공데이터포털 제공, https://www.data.go.kr/data/15048426/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a1934e86c5e18941d5b)",
   "raw_sha256": "3b6419bf941bc9e134a5ba6a1d4ad0b6c4af9231225fa396ff315c49a21a89e0"
  },
  {
@@ -56,7 +56,7 @@
   "name": "충청남도_전국노인장애인보호구역정보_20251130.csv",
   "rows": 800,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003549307&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "충청남도, 「충청남도_전국노인장애인보호구역정보 — 충청남도_전국노인장애인보호구역정보_20251130.csv」, 공표 2025-11-30, 공공데이터포털 제공, https://www.data.go.kr/data/15118670/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a19546112fac45739fc)",
+  "citation_ko": "충청남도, 「충청남도_전국노인장애인보호구역정보 — 충청남도_전국노인장애인보호구역정보_20251130.csv」, 공표 2025-11-30, 공공데이터포털 제공, https://www.data.go.kr/data/15118670/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a19546112fac45739fc)",
   "raw_sha256": "94c2d09362d8ebf888ec47f6aa54db2f677263bed2d1c4fd7ef87de2a94592b9"
  },
  {
@@ -66,7 +66,7 @@
   "name": "경찰청_시도청별어린이보호구역지정건수_260630.csv",
   "rows": 18,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003680877&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "경찰청, 「경찰청_어린이보호구역 지정 건수 현황 — 경찰청_시도청별어린이보호구역지정건수_260630.csv」, 공표 2026-07-20, 공공데이터포털 제공, https://www.data.go.kr/data/15038624/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a196f73caac1e7bc935)",
+  "citation_ko": "경찰청, 「경찰청_어린이보호구역 지정 건수 현황 — 경찰청_시도청별어린이보호구역지정건수_260630.csv」, 공표 2026-07-20, 공공데이터포털 제공, https://www.data.go.kr/data/15038624/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a196f73caac1e7bc935)",
   "raw_sha256": "4de730360f583b756eb44827964e92da924082903fa4d7079b1bbeeabd32b320"
  },
  {
@@ -76,7 +76,7 @@
   "name": "한국교통안전공단_전국 대중교통 버스정류장 현황(2024년).csv",
   "rows": 17,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003688012&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "한국교통안전공단, 「한국교통안전공단_전국 대중교통 버스정류장 현황 — 한국교통안전공단_전국 대중교통 버스정류장 현황(2024년).csv」, 공표 2026-07-29, 공공데이터포털 제공, https://www.data.go.kr/data/15066754/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a198d81befe7d8e585e)",
+  "citation_ko": "한국교통안전공단, 「한국교통안전공단_전국 대중교통 버스정류장 현황 — 한국교통안전공단_전국 대중교통 버스정류장 현황(2024년).csv」, 공표 2026-07-29, 공공데이터포털 제공, https://www.data.go.kr/data/15066754/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a198d81befe7d8e585e)",
   "raw_sha256": "7e1aa05dfd558c8491243d15349646d8e9d39f43fd3a80197a455cdaee3b003f"
  },
  {
@@ -86,7 +86,7 @@
   "name": "용도별차종별시군구별 일평균 자동차주행거리(2019년).csv",
   "rows": 230,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003202423&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "한국교통안전공단, 「한국교통안전공단_용도별 차종별 시군구별 일평균 자동차 주행거리 — 용도별차종별시군구별 일평균 자동차주행거리(2019년).csv」, 공표 2021-09-14, 공공데이터포털 제공, https://www.data.go.kr/data/15088483/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a1a1d63b5f2766a54e3)",
+  "citation_ko": "한국교통안전공단, 「한국교통안전공단_용도별 차종별 시군구별 일평균 자동차 주행거리 — 용도별차종별시군구별 일평균 자동차주행거리(2019년).csv」, 공표 2021-09-14, 공공데이터포털 제공, https://www.data.go.kr/data/15088483/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a1a1d63b5f2766a54e3)",
   "raw_sha256": "102f2cd1ddee5dddd22763640a42623311c346574763c7d793ee61e05c9bfc9d"
  },
  {
@@ -96,7 +96,7 @@
   "name": "한국도로교통공단_사상자 연령층별 성별 교통사고(2025).csv",
   "rows": 19,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003692762&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "한국도로교통공단, 「한국도로교통공단_사상자 연령층별 성별 교통사고 통계 — 한국도로교통공단_사상자 연령층별 성별 교통사고(2025).csv」, 공표 2026-08-04, 공공데이터포털 제공, https://www.data.go.kr/data/15070293/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15a1a3b2aec7c700e18f1)",
+  "citation_ko": "한국도로교통공단, 「한국도로교통공단_사상자 연령층별 성별 교통사고 통계 — 한국도로교통공단_사상자 연령층별 성별 교통사고(2025).csv」, 공표 2026-08-04, 공공데이터포털 제공, https://www.data.go.kr/data/15070293/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15a1a3b2aec7c700e18f1)",
   "raw_sha256": "0a25af98e3e29d4648f206341c64dda97e2eaf4667c24403c11deb4a4f0ea786"
  },
  {
@@ -106,7 +106,7 @@
   "name": "DM_STTN_USEV_SMY.csv",
   "rows": 179341,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000007645352&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "국토교통부, 「국토교통부_시군구별 정류장평균이용량 — DM_STTN_USEV_SMY.csv」, 관측기간 2025년1월1일~2025년12월31일, 공표 2026-08-27, 공공데이터포털 제공, https://www.data.go.kr/data/15162142/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15b80f8f0a7c6f58ea34f)",
+  "citation_ko": "국토교통부, 「국토교통부_시군구별 정류장평균이용량 — DM_STTN_USEV_SMY.csv」, 관측기간 2025년1월1일~2025년12월31일, 공표 2026-08-27, 공공데이터포털 제공, https://www.data.go.kr/data/15162142/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15b80f8f0a7c6f58ea34f)",
   "raw_sha256": "6539c4d648da41ed2c305fbe340df023b449287f3ae1fdf57b975f9f16ccf68f"
  },
  {
@@ -116,7 +116,7 @@
   "name": "지역별(행정동) 성별 연령별 주민등록 인구수_20260930.csv",
   "rows": 3619,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000007706226&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "행정안전부, 「행정안전부_지역별(행정동) 성별 연령별 주민등록 인구수 — 지역별(행정동) 성별 연령별 주민등록 인구수_20260930.csv」, 공표 2026-10-02, 공공데이터포털 제공, https://www.data.go.kr/data/15097972/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15b8140d3525ddbd48061)",
+  "citation_ko": "행정안전부, 「행정안전부_지역별(행정동) 성별 연령별 주민등록 인구수 — 지역별(행정동) 성별 연령별 주민등록 인구수_20260930.csv」, 공표 2026-10-02, 공공데이터포털 제공, https://www.data.go.kr/data/15097972/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15b8140d3525ddbd48061)",
   "raw_sha256": "23a269d2fd754f27bab32c9a26c711c3e49e65aee7169dc3184d8b5a548cd36d"
  },
  {
@@ -126,7 +126,7 @@
   "name": "2025정류장현황(EUCKR)_20251209.csv",
   "rows": 227065,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003558143&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "국토교통부, 「국토교통부_전국 버스정류장 위치정보 — 2025정류장현황(EUCKR)_20251209.csv」, 공표 2025-11-09, 공공데이터포털 제공, https://www.data.go.kr/data/15067528/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15b81dbfe38c7de711949)",
+  "citation_ko": "국토교통부, 「국토교통부_전국 버스정류장 위치정보 — 2025정류장현황(EUCKR)_20251209.csv」, 공표 2025-11-09, 공공데이터포털 제공, https://www.data.go.kr/data/15067528/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15b81dbfe38c7de711949)",
   "raw_sha256": "1db7e5d0cdc541e86a957b7584f2ddf8e4b1d29b02594984a01c5752ac13af06"
  },
  {
@@ -136,7 +136,7 @@
   "name": "자동차 표시연비 정보.csv",
   "rows": 4203,
   "source_url": "https://www.data.go.kr/cmm/cmm/fileDownload.do?atchFileId=FILE_000000003644543&fileDetailSn=1&insertDataPrcus=N",
-  "citation_ko": "한국에너지공단, 「한국에너지공단_자동차 표시연비 정보 — 자동차 표시연비 정보.csv」, 공표 2026-05-22, 공공데이터포털 제공, https://www.data.go.kr/data/15083023/fileData.do (접근일: 2026. 10. 20.; 자료 버전 ver_01a15b884a8af0cd2589e2a1)",
+  "citation_ko": "한국에너지공단, 「한국에너지공단_자동차 표시연비 정보 — 자동차 표시연비 정보.csv」, 공표 2026-05-22, 공공데이터포털 제공, https://www.data.go.kr/data/15083023/fileData.do (접근일: 2026. 10. 21.; 자료 버전 ver_01a15b884a8af0cd2589e2a1)",
   "raw_sha256": "5d4853ce9cbd61589003fdb3386ff3d7c3afd0bf1c38bcb4ed2698d5c9482dce"
  }
 ]
