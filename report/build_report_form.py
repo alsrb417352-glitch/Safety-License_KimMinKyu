@@ -33,7 +33,7 @@ calls = [json.loads(l) for f in ("tool_calls.jsonl", "tool_calls_api.jsonl") if 
 ap = argparse.ArgumentParser()
 ap.add_argument("--name", default="김민규 (팀명: 안전 면허)")
 ap.add_argument("--team", default="안전 면허", help="제출 파일명(팀명_분석보고서.pdf)에 쓸 팀명")
-ap.add_argument("--code-url", default="https://github.com/alsrb417352-glitch/Safety-License_KimMinKyu")
+ap.add_argument("--code-url", default="https://github.com/alsrb417352-glitch/elderly-mobility-blindspot_KimMinKyu")
 ap.add_argument("--out", default=str(ROOT / "report" / "분석보고서_양식.pdf"))
 args = ap.parse_args()
 
