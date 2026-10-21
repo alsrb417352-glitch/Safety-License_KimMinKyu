@@ -1,0 +1,19 @@
+{"at": "2026-10-21T08:27:27", "id": "s1", "tool": "list_sites", "args": {"core_only": true}, "ok": true, "target_id": null}
+{"at": "2026-10-21T08:27:28", "id": "s2", "tool": "search_datasets", "args": {"query": "시군구 5세별 주민등록인구", "scope": ["kosis"], "max_results": 10}, "ok": true, "target_id": null}
+{"at": "2026-10-21T08:27:39", "id": "m1", "tool": "search_datasets", "args": {"query": "101/DT_1B04005N/ITM", "scope": ["kosis_meta"], "max_results": 500}, "ok": true, "target_id": null}
+{"at": "2026-10-21T08:28:14", "id": "c1", "tool": "collect", "args": {"api": {"connector": "kosis", "params": {"org_id": "101", "tbl_id": "DT_1B04006", "prd_se": "M", "start": "202506", "end": "202506", "itm_id": "T2", "obj": {"objL1": "ALL", "objL2": "ALL"}}}}, "ok": true, "target_id": "job_01a15d9342e4b45f8fac1296"}
+{"at": "2026-10-21T08:28:28", "id": "g1_1", "tool": "get_job", "args": {}, "ok": true, "target_id": "job_01a15d9342e4b45f8fac1296"}
+{"at": "2026-10-21T08:28:37", "id": "g1_2", "tool": "get_job", "args": {}, "ok": true, "target_id": "job_01a15d9342e4b45f8fac1296"}
+{"at": "2026-10-21T08:28:46", "id": "c2", "tool": "collect", "args": {"api": {"connector": "kosis", "params": {"org_id": "101", "tbl_id": "DT_1B04006", "prd_se": "M", "start": "202406", "end": "202406", "itm_id": "T2", "obj": {"objL1": "ALL", "objL2": "ALL"}}}}, "ok": true, "target_id": "job_01a15d93bc769861ab33fe0a"}
+{"at": "2026-10-21T08:28:55", "id": "g2_1", "tool": "get_job", "args": {}, "ok": true, "target_id": "job_01a15d93bc769861ab33fe0a"}
+{"at": "2026-10-21T08:29:01", "id": "e1", "tool": "export", "args": {"table_version_ids": ["tbl_01a15d93773939513a738d36", "tbl_01a15d93d5f1697e55b811aa"], "format": "csv", "purpose": "internal"}, "ok": true, "target_id": "exp_01a15d93f35e08e1370365f5"}
+{"at": "2026-10-21T08:29:49", "id": "qe4f68b", "tool": "search_datasets", "args": {"scope": ["datagokr_catalog"]}, "ok": true, "target_id": null}
+{"at": "2026-10-21T08:29:51", "id": "q07bddb", "tool": "search_datasets", "args": {"scope": ["datagokr_catalog"]}, "ok": true, "target_id": null}
+{"at": "2026-10-21T08:29:52", "id": "qb7a6cb", "tool": "search_datasets", "args": {"scope": ["datagokr_catalog"]}, "ok": true, "target_id": null}
+{"at": "2026-10-21T08:35:37", "id": "k4497a5", "tool": "search_datasets", "args": {"query": "연령층별 교통사고 사망자", "scope": ["kosis"], "max_results": 15}, "ok": true, "target_id": null, "error": null}
+{"at": "2026-10-21T08:35:39", "id": "kb7a6cb", "tool": "search_datasets", "args": {"query": "고령운전자 교통사고", "scope": ["kosis"], "max_results": 15}, "ok": true, "target_id": null, "error": null}
+{"at": "2026-10-21T08:35:40", "id": "kd35caa", "tool": "search_datasets", "args": {"query": "시군구별 교통사고 사망자", "scope": ["kosis"], "max_results": 15}, "ok": true, "target_id": null, "error": null}
+{"at": "2026-10-21T08:35:51", "id": "c3", "tool": "collect", "args": {"api": {"connector": "kosis", "params": {"org_id": "132", "tbl_id": "DT_V_MOTA_021", "prd_se": "Y", "start": "2015", "end": "2025", "itm_id": "ALL", "obj": {"objL1": "ALL", "objL2": "ALL"}, "title": "가해자 연령층별 교통사고(경찰청) 2015~2025"}}, "idempotency_key": "kosis-mota021-2015-2025"}, "ok": true, "target_id": "job_01a15d9a3918086f315dc792", "error": null}
+{"at": "2026-10-21T08:35:58", "id": "g3_1", "tool": "get_job", "args": {"job_id": "job_01a15d9a3918086f315dc792"}, "ok": true, "target_id": "job_01a15d9a3918086f315dc792", "error": null}
+{"at": "2026-10-21T08:36:02", "id": "p3", "tool": "query", "args": {"table_version_id": "tbl_01a15d9a412808ad94f23fe8", "sql": "SELECT DISTINCT C1_NM, C2_NM, ITM_NM FROM t LIMIT 80", "max_rows": 80}, "ok": false, "target_id": null, "error": "invalid_input"}
+{"at": "2026-10-21T08:36:07", "id": "e3", "tool": "export", "args": {"table_version_ids": ["tbl_01a15d9a412808ad94f23fe8"], "format": "csv", "purpose": "internal"}, "ok": true, "target_id": "exp_01a15d9a7bd9eec815170664", "error": null}

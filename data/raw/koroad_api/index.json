@@ -1,0 +1,35 @@
+[
+ {
+  "pk": "15056770",
+  "provider": "한국도로교통공단",
+  "file": "KoROAD_lgStat_2024_2025.csv",
+  "description": "지자체별 대상 교통사고 통계: 시군구 236곳 × 2024·2025 × 사고분류 13종(고령운전자사고·고령보행자사고·고령자사고 포함)",
+  "endpoint": "https://apis.data.go.kr/B552061/lgStat/getRestLgStat",
+  "detail_url": "https://www.data.go.kr/data/15056770/openapi.do",
+  "bytes": 646464,
+  "sha256": "8940ccac716593e6c1f59cac7cbba31b69159a398b01826ba503563a7dd9ad60",
+  "collected_at": "2026-10-21T19:30:00+09:00"
+ },
+ {
+  "pk": "15057666",
+  "provider": "한국도로교통공단",
+  "file": "KoROAD_frequentzoneOldman_2023_2025.csv",
+  "description": "보행노인 교통사고 다발지역(전국, 2023·2024·2025, 다발지역 경계 폴리곤 geom_json 포함)",
+  "endpoint": "https://apis.data.go.kr/B552061/frequentzoneOldman/getRestFrequentzoneOldman",
+  "detail_url": "https://www.data.go.kr/data/15057666/openapi.do",
+  "bytes": 851584,
+  "sha256": "5ff37559ee5dc202e1af54f8ac437ec057e98ca46430089abfadf327d241428c",
+  "collected_at": "2026-10-21T19:30:00+09:00"
+ },
+ {
+  "pk": "15056770",
+  "provider": "한국도로교통공단",
+  "file": "KoROAD_lgStat_nodata.csv",
+  "description": "lgStat에서 자료 없음(NODATA)으로 응답한 시군구 코드",
+  "endpoint": "",
+  "detail_url": "https://www.data.go.kr/data/15056770/openapi.do",
+  "bytes": 384,
+  "sha256": "fc3f1c265a3c41b28871f9477ec957ba443c7482d8e9f0f7032b4b07b514e58b",
+  "collected_at": "2026-10-21T19:30:00+09:00"
+ }
+]

@@ -1,0 +1,132 @@
+{
+ "subway_free": {
+  "share": {
+   "2014": 25.8,
+   "2015": 26.3,
+   "2016": 26.5,
+   "2017": 27.6,
+   "2018": 28.5,
+   "2019": 29.8,
+   "2020": 31.1,
+   "2021": 31.5,
+   "2022": 31.8,
+   "2023": 33.0,
+   "2024": 34.1
+  },
+  "free_riders_2024": 107570108,
+  "boardings_2024": 315460387,
+  "free_riders_2014": 83733911,
+  "crosscheck_with_우대권_series": {
+   "2017": true,
+   "2018": true,
+   "2019": true,
+   "2020": true,
+   "2021": true,
+   "2022": true
+  }
+ },
+ "busan_sido": {
+  "return_rate_2024": 14.36,
+  "return_rank": 1,
+  "olddrv_death_per100k65_2024": 3.15,
+  "olddrv_death_rank_low": 1,
+  "national_olddrv_death_per100k65_2024": 7.62,
+  "p65_share_of_national": 7.6
+ },
+ "duribal": {
+  "period": [
+   "2025-05-01",
+   "2025-05-31"
+  ],
+  "requests": 37194,
+  "completed": 32240,
+  "unserved": 3503,
+  "unserved_rate": 9.4,
+  "completed_rate": 86.7,
+  "wait_median_min": 42.4,
+  "wait_p75_min": 68.1,
+  "share_wait_over_60": 32.2,
+  "share_65plus_type": 15.0,
+  "share_hospital": 16.8,
+  "dist_median_km": 6.2,
+  "fare_median_won": 2700,
+  "n_wait_obs": 32085,
+  "excluded_wait_records": 8
+ },
+ "busan_gu": {
+  "lowest_bus": {
+   "sgg": "강서구",
+   "bus_board_pc": 0.164,
+   "olddrv_death_per100k65_2y": 16.3,
+   "olddrv_death_2y": 7,
+   "olddrv_rank_high": 1,
+   "duribal_wait_med": 51.3,
+   "wait_rank_high": 1
+  },
+  "busan_olddrv_death_per100k65_2y": 3.9,
+  "spearman_bus_vs_olddrv_death": [
+   0.26,
+   0.33
+  ],
+  "spearman_bus_vs_wait": [
+   -0.37,
+   0.16
+  ],
+  "n": 16
+ },
+ "ped_hotspots": {
+  "national": 781,
+  "busan": 129,
+  "busan_share": 16.5,
+  "by_year": {
+   "2023": 228,
+   "2024": 262,
+   "2025": 291
+  },
+  "busan_in_zone_gu": 86,
+  "zone_gu": [
+   "강서구",
+   "기장군",
+   "남구",
+   "동래구",
+   "부산진구",
+   "사하구",
+   "서구",
+   "연제구",
+   "영도구",
+   "중구",
+   "해운대구"
+  ],
+  "n_zones": 55,
+  "within_300m": 17,
+  "within_300m_share": 19.8,
+  "median_dist_m": 600,
+  "national_unique_xy": 730,
+  "busan_unique_xy": 124
+ },
+ "projection": {
+  "2025": {
+   "p65_10k": 1051.4,
+   "share65": 20.3,
+   "p75_10k": 429.8
+  },
+  "2030": {
+   "p65_10k": 1298.0,
+   "share65": 25.3,
+   "p75_10k": 541.5
+  },
+  "2035": {
+   "p65_10k": 1520.8,
+   "share65": 29.9,
+   "p75_10k": 720.4
+  },
+  "2040": {
+   "p65_10k": 1715.1,
+   "share65": 34.3,
+   "p75_10k": 897.9
+  },
+  "returns_2035_at_2024_rate": 174200,
+  "returns_2024": 114436,
+  "growth_p65_2025_2035_pct": 44.6
+ }
+}

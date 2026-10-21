@@ -1,0 +1,80 @@
+{
+  "export_id": "exp_01a15d93f35e08e1370365f5",
+  "created_at": "2026-10-21T08:28:59+00:00",
+  "purpose": "internal",
+  "format": "csv",
+  "tables": [
+    {
+      "table_version_id": "tbl_01a15d93773939513a738d36",
+      "name": "행정구역(시군구)별/1세별 주민등록인구 2025.06 총인구",
+      "rows": 30090,
+      "cols": 21,
+      "raw_version_id": "ver_01a15d93772f91aa885a9465",
+      "raw_sha256": "768e989dcd6cd4af1dc5d29fffbc58ce3448751e84992f7524703a4edf6bf394",
+      "source_url": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&format=json&jsonVD=Y&orgId=101&tblId=DT_1B04006&prdSe=M&itmId=T2&objL1=ALL&objL2=ALL&startPrdDe=202506&endPrdDe=202506",
+      "citation_ko": "KOSIS 표 101/DT_1B04006 작성기관(표 메타 확인), 「행정구역(시군구)별/1세별 주민등록인구 2025.06 총인구 [응답 1]」, 관측기간 202506~202506, https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&format=json&jsonVD=Y&orgId=101&tblId=DT_1B04006&prdSe=M&itmId=T2&objL1=ALL&objL2=ALL&startPrdDe=202506&endPrdDe=202506 (접근일: 2026. 10. 21.; 자료 버전 ver_01a15d93772f91aa885a9465)",
+      "redistribution": "unconfirmed",
+      "origin_status": "origin_via_catalog",
+      "quality": {
+        "partial": false,
+        "missing": [],
+        "duplicate_rows": 0,
+        "n_rows": 30090,
+        "expected_rows_reported_by_parser": 30090,
+        "row_count_match": true,
+        "checks_not_done": [
+          "원자료 대비 수치 정확성(독립 정답 없음)",
+          "개인정보 완전 탐지"
+        ]
+      },
+      "file": "tbl_01a15d93773939513a738d36.csv",
+      "sha256": "31d4619bc7697d4551ac7c71dd21c08fa8c2e6e1643fa06351dbd09cb1aba5e8",
+      "formula_guarded_cells": 0
+    },
+    {
+      "table_version_id": "tbl_01a15d93d5f1697e55b811aa",
+      "name": "행정구역(시군구)별/1세별 주민등록인구 2024.06 총인구",
+      "rows": 30090,
+      "cols": 21,
+      "raw_version_id": "ver_01a15d93d5e0b2422b72c32c",
+      "raw_sha256": "de4d103f8bb14752c50d6f86a43fd765dfe7250518ef9fad404e38bc3aea3990",
+      "source_url": "https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&format=json&jsonVD=Y&orgId=101&tblId=DT_1B04006&prdSe=M&itmId=T2&objL1=ALL&objL2=ALL&startPrdDe=202406&endPrdDe=202406",
+      "citation_ko": "KOSIS 표 101/DT_1B04006 작성기관(표 메타 확인), 「행정구역(시군구)별/1세별 주민등록인구 2024.06 총인구 [응답 1]」, 관측기간 202406~202406, https://kosis.kr/openapi/Param/statisticsParameterData.do?method=getList&format=json&jsonVD=Y&orgId=101&tblId=DT_1B04006&prdSe=M&itmId=T2&objL1=ALL&objL2=ALL&startPrdDe=202406&endPrdDe=202406 (접근일: 2026. 10. 21.; 자료 버전 ver_01a15d93d5e0b2422b72c32c)",
+      "redistribution": "unconfirmed",
+      "origin_status": "origin_via_catalog",
+      "quality": {
+        "partial": false,
+        "missing": [],
+        "duplicate_rows": 0,
+        "n_rows": 30090,
+        "expected_rows_reported_by_parser": 30090,
+        "row_count_match": true,
+        "checks_not_done": [
+          "원자료 대비 수치 정확성(독립 정답 없음)",
+          "개인정보 완전 탐지"
+        ]
+      },
+      "file": "tbl_01a15d93d5f1697e55b811aa.csv",
+      "sha256": "f5b229ae25eeb9476cbc317f301b9f9d76695854d328d68a3c0c7eb0d845577e",
+      "formula_guarded_cells": 0
+    }
+  ],
+  "raw_included": false,
+  "rights_note": "원본 파일은 기본 포함하지 않음. 재배포 조건이 '제한·미확인'인 자료는 원문 링크·접근 방법만 제공.",
+  "checks": [
+    {
+      "table_version_id": "tbl_01a15d93773939513a738d36",
+      "rows_written": 30090,
+      "rows_expected": 30090,
+      "row_count_ok": true,
+      "value_mismatches": 0
+    },
+    {
+      "table_version_id": "tbl_01a15d93d5f1697e55b811aa",
+      "rows_written": 30090,
+      "rows_expected": 30090,
+      "row_count_ok": true,
+      "value_mismatches": 0
+    }
+  ]
+}

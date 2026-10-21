@@ -3,10 +3,10 @@
   "total_deaths_2025": 2549,
   "deaths_65plus": 1378,
   "share_deaths_65plus": 54.1,
-  "share_pop_65plus": 22.1,
-  "rate_65plus": 12.18,
-  "rate_under65": 2.94,
-  "ratio_65_vs_under65": 4.14
+  "share_pop_65plus": 20.6,
+  "rate_65plus": 13.05,
+  "rate_under65": 2.88,
+  "ratio_65_vs_under65": 4.53
  },
  "returns": {
   "by_year_65plus": {
@@ -21,44 +21,93 @@
    "2023": 112896,
    "2024": 114436
   },
-  "national_rate_2024_per1k65": 10.11,
+  "national_rate_2024_per1k65": 11.46,
   "spearman_bus_vs_return": [
-   0.67,
-   0.0033
+   0.7,
+   0.0019
   ],
   "spearman_death_vs_return": [
    -0.46,
-   0.0627
+   0.0659
   ],
   "max": [
    "부산",
-   12.910634825936349
+   14.355741837875822
   ],
   "min": [
    "전남",
-   6.676883711741226
+   7.279685474089255
   ],
-  "gap_ratio_max_min": 1.93
+  "gap_ratio_max_min": 1.97,
+  "spearman_return_vs_olddrv_death_2024": [
+   -0.66,
+   0.0038
+  ],
+  "spearman_return_vs_olddrv_acc_2024": [
+   -0.3,
+   0.2396
+  ]
  },
  "quintiles": {
   "death_rate": [
-   15.97,
-   11.53,
-   6.15,
-   3.21,
-   2.72
+   15.8623,
+   11.4504,
+   6.1741,
+   3.1969,
+   2.7134
   ],
   "old_death_rate_2018": [
-   38.14,
-   26.41,
-   19.31,
-   10.11,
-   6.3
+   39.9715,
+   27.9135,
+   20.9129,
+   10.9106,
+   6.7208
   ],
-  "ratio_q1_q5": 5.88,
-  "ratio_old_q1_q5": 6.05,
-  "pop_share_q1q2": 11.8,
+  "old_death_rate_2025": [
+   28.2806,
+   23.3459,
+   17.5179,
+   7.9058,
+   7.4195
+  ],
+  "olddrv_acc_rate": [
+   4.2065,
+   3.8226,
+   4.8403,
+   4.3654,
+   4.1745
+  ],
+  "olddrv_death_rate": [
+   21.1548,
+   15.8346,
+   10.7733,
+   4.0259,
+   3.7264
+  ],
+  "olddrv_cfr": [
+   5.0291,
+   4.1423,
+   2.2258,
+   0.9222,
+   0.8926
+  ],
+  "olddrv_death_share": [
+   44.5,
+   40.5,
+   32.7,
+   23.2,
+   28.3
+  ],
+  "ratio_q1_q5": 5.85,
+  "ratio_old_q1_q5": 5.95,
+  "ratio_old2025_q1_q5": 3.81,
+  "ratio_olddrv_death_q1_q5": 5.68,
+  "ratio_olddrv_acc_q1_q5": 1.01,
+  "ratio_olddrv_cfr_q1_q5": 5.63,
+  "pop_share_q1q2": 11.9,
   "death_share_q1q2": 32.1,
+  "n_sgg": 223,
+  "deaths_sgg": 2532,
   "n": [
    45,
    44,
@@ -77,8 +126,8 @@
    0.006,
    0.048,
    0.123,
-   0.239,
-   0.508
+   0.237,
+   0.495
   ]
  },
  "regression": {
@@ -91,18 +140,18 @@
    "p": 0.0
   },
   "모형1:C(region_type, Treatment('시'))[T.군]": {
-   "IRR": 1.147,
+   "IRR": 1.159,
    "CI": [
-    0.946,
-    1.39
+    0.954,
+    1.408
    ],
-   "p": 0.1619
+   "p": 0.1367
   },
   "모형1:C(region_type, Treatment('시'))[T.특별·광역시 구]": {
-   "IRR": 0.504,
+   "IRR": 0.506,
    "CI": [
-    0.432,
-    0.589
+    0.433,
+    0.592
    ],
    "p": 0.0
   },
@@ -110,17 +159,17 @@
    "IRR": 1.052,
    "CI": [
     1.042,
-    1.062
+    1.063
    ],
    "p": 0.0
   },
   "모형1:lbus": {
    "IRR": 0.964,
    "CI": [
-    0.927,
-    1.004
+    0.926,
+    1.003
    ],
-   "p": 0.0759
+   "p": 0.0726
   },
   "모형2(+주행거리):Intercept": {
    "IRR": 0.0,
@@ -131,18 +180,18 @@
    "p": 0.0
   },
   "모형2(+주행거리):C(region_type, Treatment('시'))[T.군]": {
-   "IRR": 0.98,
+   "IRR": 0.983,
    "CI": [
-    0.804,
-    1.196
+    0.805,
+    1.201
    ],
-   "p": 0.8458
+   "p": 0.8694
   },
   "모형2(+주행거리):C(region_type, Treatment('시'))[T.특별·광역시 구]": {
-   "IRR": 0.644,
+   "IRR": 0.651,
    "CI": [
-    0.535,
-    0.775
+    0.542,
+    0.782
    ],
    "p": 0.0
   },
@@ -157,77 +206,143 @@
   "모형2(+주행거리):lbus": {
    "IRR": 0.981,
    "CI": [
-    0.943,
+    0.944,
     1.02
    ],
-   "p": 0.33
+   "p": 0.3405
   },
   "모형2(+주행거리):vkt_car_private": {
-   "IRR": 1.084,
+   "IRR": 1.088,
    "CI": [
-    1.046,
-    1.124
+    1.05,
+    1.128
    ],
    "p": 0.0
+  },
+  "모형3(고령운전자 사고 사망):Intercept": {
+   "IRR": 0.0,
+   "CI": [
+    0.0,
+    0.0
+   ],
+   "p": 0.0
+  },
+  "모형3(고령운전자 사고 사망):C(region_type, Treatment('시'))[T.군]": {
+   "IRR": 0.994,
+   "CI": [
+    0.761,
+    1.298
+   ],
+   "p": 0.963
+  },
+  "모형3(고령운전자 사고 사망):C(region_type, Treatment('시'))[T.특별·광역시 구]": {
+   "IRR": 0.492,
+   "CI": [
+    0.375,
+    0.645
+   ],
+   "p": 0.0
+  },
+  "모형3(고령운전자 사고 사망):share65": {
+   "IRR": 1.035,
+   "CI": [
+    1.022,
+    1.049
+   ],
+   "p": 0.0
+  },
+  "모형3(고령운전자 사고 사망):lbus": {
+   "IRR": 0.989,
+   "CI": [
+    0.941,
+    1.039
+   ],
+   "p": 0.659
+  },
+  "모형3(고령운전자 사고 사망):vkt_car_private": {
+   "IRR": 1.083,
+   "CI": [
+    1.029,
+    1.138
+   ],
+   "p": 0.002
   }
+ },
+ "regression_n": {
+  "모형1": 223,
+  "모형2": 222,
+  "모형3": 222
  },
  "spearman_sigungu": {
   "share65": {
    "share65": 1.0,
    "bus_board_pc": -0.64,
    "vkt_car_private": 0.62,
-   "death_per100k": 0.76,
-   "old_death_per100k65": 0.55
+   "death_per100k": 0.75,
+   "old_death_per100k65_2025": 0.61,
+   "olddrv_death_per100k65": 0.57
   },
   "bus_board_pc": {
    "share65": -0.64,
    "bus_board_pc": 1.0,
    "vkt_car_private": -0.82,
    "death_per100k": -0.78,
-   "old_death_per100k65": -0.73
+   "old_death_per100k65_2025": -0.67,
+   "olddrv_death_per100k65": -0.67
   },
   "vkt_car_private": {
    "share65": 0.62,
    "bus_board_pc": -0.82,
    "vkt_car_private": 1.0,
-   "death_per100k": 0.75,
-   "old_death_per100k65": 0.65
+   "death_per100k": 0.76,
+   "old_death_per100k65_2025": 0.65,
+   "olddrv_death_per100k65": 0.63
   },
   "death_per100k": {
-   "share65": 0.76,
+   "share65": 0.75,
    "bus_board_pc": -0.78,
-   "vkt_car_private": 0.75,
+   "vkt_car_private": 0.76,
    "death_per100k": 1.0,
-   "old_death_per100k65": 0.73
+   "old_death_per100k65_2025": 0.91,
+   "olddrv_death_per100k65": 0.83
   },
-  "old_death_per100k65": {
-   "share65": 0.55,
-   "bus_board_pc": -0.73,
+  "old_death_per100k65_2025": {
+   "share65": 0.61,
+   "bus_board_pc": -0.67,
    "vkt_car_private": 0.65,
-   "death_per100k": 0.73,
-   "old_death_per100k65": 1.0
+   "death_per100k": 0.91,
+   "old_death_per100k65_2025": 1.0,
+   "olddrv_death_per100k65": 0.85
+  },
+  "olddrv_death_per100k65": {
+   "share65": 0.57,
+   "bus_board_pc": -0.67,
+   "vkt_car_private": 0.63,
+   "death_per100k": 0.83,
+   "old_death_per100k65_2025": 0.85,
+   "olddrv_death_per100k65": 1.0
   }
  },
  "blindspots": {
   "thresholds": {
-   "share65_top_tertile": 34.33,
-   "bus_board_pc_bottom_tertile": 0.0555,
-   "death_per100k_top_tertile": 11.14
+   "share65_top_tertile": 32.16,
+   "bus_board_pc_bottom_tertile": 0.0544,
+   "death_per100k_top_tertile": 11.04
   },
-  "n_triple": 47,
-  "n_double": 34,
-  "pop_triple": 2220718,
-  "p65_triple": 906732,
-  "deaths_triple": 446,
-  "death_share_triple": 17.5,
-  "pop_share_triple": 4.3,
-  "death_rate_triple": 20.08,
-  "death_rate_rest": 4.3,
+  "n_triple": 46,
+  "n_double": 36,
+  "pop_triple": 2095490,
+  "p65_triple": 817805,
+  "deaths_triple": 420,
+  "death_share_triple": 16.5,
+  "pop_share_triple": 4.1,
+  "death_rate_triple": 20.04,
+  "death_rate_rest": 4.34,
   "by_sido": {
    "경북": 12,
-   "경남": 9,
-   "전남": 9,
-   "충남": 7,
+   "전남": 10,
+   "경남": 8,
+   "충남": 6,
    "전북": 5,
    "강원": 4,
    "충북": 1
@@ -236,78 +351,131 @@
    [
     "충남",
     "청양군",
-    43.406,
-    0.043,
-    43.336
+    41.777,
+    0.044,
+    44.32
    ],
    [
     "전남",
     "함평군",
-    43.094,
+    42.172,
     NaN,
-    40.2
+    40.359
    ],
    [
     "전남",
     "장흥군",
-    41.398,
+    39.708,
     0.001,
-    38.41
+    37.912
    ],
    [
     "전남",
     "곡성군",
-    42.222,
+    41.051,
     0.008,
-    32.462
+    33.818
    ],
    [
     "충북",
     "괴산군",
-    44.452,
-    0.038,
-    32.368
+    42.56,
+    0.04,
+    33.363
    ],
    [
     "전남",
     "해남군",
-    39.943,
+    38.434,
     0.027,
-    30.736
+    30.372
    ],
    [
     "경북",
     "고령군",
-    41.904,
+    38.92,
     0.032,
-    30.639
-   ],
-   [
-    "경남",
-    "함양군",
-    42.628,
-    0.056,
-    28.542
+    30.127
    ],
    [
     "전남",
     "신안군",
-    39.228,
-    0.015,
-    25.96
+    39.891,
+    0.016,
+    28.208
+   ],
+   [
+    "경남",
+    "함양군",
+    40.501,
+    0.054,
+    27.964
    ],
    [
     "경남",
     "하동군",
-    45.241,
+    42.443,
     0.032,
-    25.301
+    24.8
    ]
-  ]
+  ],
+  "observed_only": {
+   "n": 44,
+   "nobus": [
+    [
+     "전남",
+     "함평군"
+    ],
+    [
+     "경북",
+     "영양군"
+    ]
+   ],
+   "pop_share": 4.0,
+   "death_share": 15.9
+  },
+  "olddrv": {
+   "p65_share_triple": 7.7,
+   "olddrv_death_share_of_national": 23.6,
+   "olddrv_deaths_triple": 199,
+   "olddrv_death_rate_triple": 24.33,
+   "olddrv_death_rate_rest": 6.61,
+   "olddrv_acc_rate_triple": 3.8,
+   "olddrv_acc_rate_rest": 4.39,
+   "olddrv_share_of_deaths_triple": 47.4,
+   "olddrv_share_of_deaths_rest": 30.2,
+   "olddrv_deaths_2024_triple": 147
+  }
+ },
+ "olddrv_by_region_type": {
+  "군": {
+   "share_of_deaths": 45.1,
+   "death_per100k65": 20.12,
+   "acc_per1k65": 3.87
+  },
+  "시": {
+   "share_of_deaths": 31.2,
+   "death_per100k65": 8.65,
+   "acc_per1k65": 4.52
+  },
+  "특별·광역시 구": {
+   "share_of_deaths": 24.4,
+   "death_per100k65": 3.28,
+   "acc_per1k65": 4.29
+  }
+ },
+ "olddrv_national": {
+  "deaths_2025": 843,
+  "deaths_2024": 761,
+  "acc_2025": 45873,
+  "acc_2024": 42369,
+  "old_deaths_2025": 1378,
+  "sgg_matched": 227,
+  "sgg_death_match_file": 227
  },
  "map_note": {
   "stops_plotted": 227053,
-  "stops_in_triple": 41030,
+  "stops_in_triple": 37244,
   "stops_unmatched_city": 61168
  },
  "scenario": {
@@ -323,35 +491,35 @@
    "충남",
    "충북"
   ],
-  "additional_returns_per_year": 9727,
+  "additional_returns_per_year": 9481,
   "by_sido": {
-   "강원": 344,
-   "경기": 923,
-   "경남": 1311,
-   "경북": 1723,
-   "광주": 740,
-   "세종": 145,
-   "전남": 1792,
-   "전북": 362,
-   "충남": 1313,
-   "충북": 1073
+   "강원": 386,
+   "경기": 103,
+   "경남": 1303,
+   "경북": 1883,
+   "광주": 751,
+   "세종": 137,
+   "전남": 1997,
+   "전북": 497,
+   "충남": 1357,
+   "충북": 1067
   },
   "range": {
    "low": {
-    "avoided_vkm_million": 37.1,
-    "tCO2": 5568.0
+    "avoided_vkm_million": 36.3,
+    "tCO2": 5443.0
    },
    "mid": {
-    "avoided_vkm_million": 61.9,
-    "tCO2": 11136.0
+    "avoided_vkm_million": 60.5,
+    "tCO2": 10886.0
    },
    "high": {
-    "avoided_vkm_million": 86.6,
-    "tCO2": 18189.0
+    "avoided_vkm_million": 84.7,
+    "tCO2": 17780.0
    }
   },
   "assumptions": [
-   "전국 평균 미만 시도가 전국 평균 반납률(2024)에 도달",
+   "전국 평균 미만 시도가 전국 평균 반납률(2024, 2024.6 65세 이상 인구 기준)에 도달",
    "반납자 1인당 회피 승용차 주행 = 시도 비사업용 승용차 대당 일평균 주행거리(2019)의 30/50/70%",
    "배출계수 0.15/0.18/0.21 kgCO2/km(가정치, IPCC 2006 휘발유 기본계수와 연비 범위로 환산)",
    "대체 이동수단 배출 미차감(총량) — 순감축은 이보다 작음",
