@@ -227,9 +227,13 @@ R["spearman_sigungu"] = d[["share65", "bus_board_pc", "vkt_car_private", "death_
 t65 = d["share65"].quantile(2 / 3)
 tbus = d["bus_board_pc"].quantile(1 / 3)
 tdeath = d["death_per100k"].quantile(2 / 3)
-d["c_aging"] = d["share65"] >= t65
-d["c_transit_gap"] = (d["bus_board_pc"] <= tbus) | d["bus_board_pc"].isna()
-d["c_risk"] = d["death_per100k"] >= tdeath
+# 경계값 포함(이상·이하). 분위수 계산의 부동소수점 오차(~1e-17) 때문에 경계에 정확히 걸린 시군구
+# (예: 버스 하위 1/3 경계 = 경남 함양군 값)가 실행 환경(numpy·pandas 버전)에 따라 빠지지 않도록 허용오차를 둔다.
+# 다른 시군구와 경계값의 차이는 최소 1e-4 이상이라 이 허용오차로 바뀌는 분류는 없다.
+EPS = 1e-9
+d["c_aging"] = d["share65"] >= t65 - EPS
+d["c_transit_gap"] = (d["bus_board_pc"] <= tbus + EPS) | d["bus_board_pc"].isna()
+d["c_risk"] = d["death_per100k"] >= tdeath - EPS
 d["n_cond"] = d[["c_aging", "c_transit_gap", "c_risk"]].sum(axis=1)
 d["blindspot"] = np.where(d["n_cond"] == 3, "3중 사각지대", np.where(d["n_cond"] == 2, "2중", "기타"))
 d.loc[d["bus_board_pc"].isna(), "bus_note"] = "교통카드 정류장 자료 없음(공백으로 분류)"
