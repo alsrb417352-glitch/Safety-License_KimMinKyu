@@ -18,7 +18,7 @@ calls = [json.loads(l) for f in ("tool_calls.jsonl", "tool_calls_api.jsonl") if 
          for l in (ROOT / "logs" / f).read_text(encoding="utf-8").splitlines() if l.strip()]
 
 ap = argparse.ArgumentParser()
-ap.add_argument("--name", default="김민규 (팀명: 안전 면허)")
+ap.add_argument("--name", default="김민규")
 ap.add_argument("--code-url", default="(GitHub 저장소 주소 기입)")
 ap.add_argument("--out", default=str(ROOT / "report" / "분석보고서.pdf"))
 args = ap.parse_args()
@@ -236,6 +236,6 @@ with sync_playwright() as p:
            footer_template='<div style="width:100%;text-align:center;font-size:7pt;color:#9ca3af;">- <span class="pageNumber"></span> -</div>',
            margin={"top": "15mm", "bottom": "14mm", "left": "15mm", "right": "15mm"})
     b.close()
-# 제출본(안전 면허_분석보고서.pdf)은 공모전 양식판 report/build_report_form.py가 만든다(2026.10.22~).
+# 제출본(김민규_분석보고서.pdf)은 공모전 양식판 report/build_report_form.py가 만든다(2026.10.22~).
 # 이 스크립트는 이전 자유 형식(report/분석보고서.pdf)만 만들어 제출본을 덮어쓰지 않는다.
 print("written", args.out)
