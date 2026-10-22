@@ -98,6 +98,7 @@ DATA_ROWS = [
     ("부산도시철도 월별 역별 권종별 승하차(2014~2024)", "부산교통공사", "부산 Big-데이터웨이브", "https://data.busan.go.kr/bdip/opendata/detail.do?publicdatapk=15128561"),
     ("부산 교통약자 이동지원 차량 운영현황(2025.5)", "부산시설공단", "부산 Big-데이터웨이브", "https://data.busan.go.kr/bdip/opendata/detail.do?publicdatapk=15147515"),
     ("전국 노인·장애인 보호구역 표준데이터(부산)", "부산 각 구군", "부산 Big-데이터웨이브", "https://data.busan.go.kr/bdip/opendata/detail.do?publicdatapk=15034532"),
+    ("지역별(행정동) 성별 연령별 주민등록 인구수(2026.9.30)", "행정안전부", "공공데이터포털", "https://www.data.go.kr/data/15097972/fileData.do"),
 ]
 CIRC = "①②③④⑤⑥⑦⑧⑨⑩⑪⑫⑬⑭⑮"
 N_API = sum(1 for r in DATA_ROWS if "OpenAPI" in r[2])
@@ -205,7 +206,7 @@ HTML = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{ar
 
 <tr><td class="k top">활용 데이터</td><td class="v">
 <p>공공데이터 <b>{len(DATA_ROWS)}종</b>(개방 파일·통계표 {N_FILE}종, OpenAPI {N_API}종, 부산 Big-데이터웨이브 {N_BUSAN}종)을 227개 시군구·17개 시도 단위로 결합하고, 부산 16개 구군을 사례로 분석했다.</p>
-<p class="note"><b>선정 이유.</b> ①②⑥ 시군구·연령별 교통사고 사망과 고령운전자 가해 사고를 직접 측정 · ③ 지역별 면허 반납의 공식 통계 · ④⑤ 사고·반납 연도와 시점을 맞춘 인구 분모와 고령운전자 사고 추이(교차검증) · ⑧ 반납 수요 전망 · ⑨⑩ 전국 시군구를 같은 기준으로 비교할 수 있는 대중교통 이용(교통카드)과 지도 · ⑪ 자동차 의존·탄소 대리지표 · ⑦⑫⑬⑭ 반납 이후의 보행 위험과 대체 교통 실태(부산 사례).</p>
+<p class="note"><b>선정 이유.</b> ①②⑥ 시군구·연령별 교통사고 사망과 고령운전자 가해 사고를 직접 측정 · ③ 지역별 면허 반납의 공식 통계 · ④⑤ 사고·반납 연도와 시점을 맞춘 인구 분모와 고령운전자 사고 추이(교차검증) · ⑧ 반납 수요 전망 · ⑨⑩ 전국 시군구를 같은 기준으로 비교할 수 있는 대중교통 이용(교통카드)과 지도 · ⑪ 자동차 의존·탄소 대리지표 · ⑦⑫⑬⑭ 반납 이후의 보행 위험과 대체 교통 실태(부산 사례) · ⑮ 초기 계산의 인구 분모(④로 바꾸기 전후 결과 비교).</p>
 <table class="data">
 <colgroup><col style="width:36.5mm"><col style="width:22.5mm"><col style="width:19mm"><col style="width:43mm"></colgroup>
 <thead><tr><th rowspan="2">활용 데이터(명)</th><th rowspan="2">제공기관(명)</th><th colspan="2">출처</th></tr>
@@ -223,9 +224,9 @@ HTML = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{ar
 </td></tr>
 
 <tr class="keeprow"><td class="k top">AI 기술<br>활용</td><td class="v">
-<p><span class="lead">사용 서비스.</span> Claude(Anthropic, 대화형 AI)와 <b>rdhub</b>(본인이 AI와 함께 개발한 연구자료 수집 도구 서버, MCP·CLI로 AI가 호출).</p>
-<p><span class="lead">활용 범위.</span> ① <b>데이터 탐색·수집</b>: AI가 rdhub 도구를 {n_calls}회 호출<span style="font-size:7.4pt">({', '.join(tools_used)})</span>해 카탈로그 검색 → 원문 확인(제공기관·원출처·이용조건) → 파일 수집 → 해시·버전 기록 → 표 정리 → 내보내기 검증을 수행했고, 모든 호출을 로그(logs/tool_calls*.jsonl)로 남겼다. 로그인이 필요한 자료는 사용자가 로그인만 하고, AI가 브라우저에서 공공데이터포털 자동승인 활용신청(도로교통공단 API 2종), 전국 시군구 코드 순회 호출({LG.get('rows', 0):,}행), 부산 Big-데이터웨이브 자료 수집을 수행했다. ② 분석 코드 작성(Python)과 결과 해석 초안. ③ 보고서 문장 초안.</p>
-<p><span class="lead">검증.</span> AI가 수치를 기억으로 채우지 못하도록 보고서의 모든 수치는 분석 코드를 다시 실행해 나온 결과 파일(results.json)에서 자동으로 채웠다. 행정구역 정합 규칙과 미매칭 지역은 로그로 남겨 직접 확인했다. 초안은 2026.9 인구 파일을 분모로 썼으나, KOSIS API로 사고·반납 연도의 6월 인구를 받아 전부 재계산했다(65세 이상/미만 사망률 배수 {VC['65세 이상/미만 사망률 배수'][0]}→{VC['65세 이상/미만 사망률 배수'][1]}, 반납률–버스 ρ {VC['반납률–버스 이용 스피어만 ρ'][0]:.2f}→{VC['반납률–버스 이용 스피어만 ρ'][1]:.2f}, 사각지대 {VC['3중 사각지대 시군구 수'][0]:.0f}→{VC['3중 사각지대 시군구 수'][1]:.0f}곳, 결론 유지). 2025년 사망자 {OD['total_deaths_2025_police']:,}명은 경찰청 통계와 도로교통공단 파일이 {'일치' if OD['total_deaths_match'] else '불일치'}했고, API로 받은 시군구 사망자·사고건수는 개방 파일과 {LG.get('sgg_death_match', 0)}/{LG.get('sgg_compared', 0)}곳 일치, 고령운전자 사고 사망자 {LG.get('olddrv_deaths_2025_api', 0):,}명은 경찰청 통계와 {'일치' if LG.get('olddrv_match_police') else '불일치'}했다. 외부 AI에는 개인정보·비공개 자료를 입력하지 않았다.</p>
+<p><span class="lead">사용 서비스.</span> Claude(Anthropic, 대화형 AI), ChatGPT(OpenAI, ChatGPT PC 앱·Codex), <b>rdhub</b>(본인이 AI와 함께 개발한 연구자료 수집 도구 서버, MCP·CLI로 AI가 호출).</p>
+<p><span class="lead">활용 범위.</span> ① <b>데이터 탐색·수집</b>: AI가 rdhub 도구를 {n_calls}회 호출<span style="font-size:7.4pt">({', '.join(tools_used)})</span>해 카탈로그 검색 → 원문 확인(제공기관·원출처·이용조건) → 파일 수집 → 해시·버전 기록 → 표 정리 → 내보내기 검증을 수행했고, 모든 호출을 로그(logs/tool_calls*.jsonl)로 남겼다. 로그인이 필요한 자료는 사용자가 로그인만 하고, AI가 브라우저에서 공공데이터포털 자동승인 활용신청(도로교통공단 API 2종), 전국 시군구 코드 순회 호출({LG.get('rows', 0):,}행), 부산 Big-데이터웨이브 자료 수집을 수행했다. ② 분석 코드 작성(Python)과 결과 해석 초안(Claude). ③ 보고서 문장 초안(Claude). ④ <b>ChatGPT</b>: 자료 수집 도구 rdhub의 코드 작성 보조(Codex)와 수집할 자료 탐색 보조.</p>
+<p><span class="lead">검증.</span> AI가 수치를 기억으로 채우지 못하도록 보고서의 모든 수치는 분석 코드를 다시 실행해 나온 결과 파일(results.json)에서 자동으로 채웠다. 행정구역 정합 규칙과 미매칭 지역은 로그로 남겨 직접 확인했다. 초안은 2026.9 인구 파일을 분모로 썼으나, KOSIS API로 사고·반납 연도의 6월 인구를 받아 전부 재계산했다(65세 이상/미만 사망률 배수 {VC['65세 이상/미만 사망률 배수'][0]}→{VC['65세 이상/미만 사망률 배수'][1]}, 반납률–버스 ρ {VC['반납률–버스 이용 스피어만 ρ'][0]:.2f}→{VC['반납률–버스 이용 스피어만 ρ'][1]:.2f}, 사각지대 {VC['3중 사각지대 시군구 수'][0]:.0f}→{VC['3중 사각지대 시군구 수'][1]:.0f}곳, 결론 유지). 2025년 사망자 {OD['total_deaths_2025_police']:,}명은 경찰청 통계와 도로교통공단 파일이 {'일치' if OD['total_deaths_match'] else '불일치'}했고, API로 받은 시군구 사망자·사고건수는 개방 파일과 {LG.get('sgg_death_match', 0)}/{LG.get('sgg_compared', 0)}곳 일치, 고령운전자 사고 사망자 {LG.get('olddrv_deaths_2025_api', 0):,}명은 경찰청 통계와 {'일치' if LG.get('olddrv_match_police') else '불일치'}했다. 외부 AI 서비스(Claude·ChatGPT)에는 공개 집계 통계·코드·문서만 입력했고 개인정보·비공개 자료는 입력하지 않았으며, 각 서비스의 데이터 저장·학습 활용 조건을 확인한 뒤 사용했다. API 인증키는 PC의 보호 저장소에만 두어 AI에 전달되지 않는다.</p>
 <p class="note" style="margin-bottom:0.4mm"><b>주요 프롬프트(요지)</b></p>
 <div class="prompt">“공모전 공고와 분석보고서 양식을 보고, 이동격차·교통약자·탄소중립을 함께 다룰 수 있으면서 기존 정책에서 드러나지 않은 교통문제를 주제로 정해. 공공데이터로 검증 가능한지부터 확인해.”</div>
 <div class="prompt">“rdhub로 고령인구·교통사고·면허반납·버스 이용·주행거리 자료를 찾아 수집해. 각 자료의 제공기관, 수정일, 이용허락범위를 원문에서 확인하고, 파일이 아니라 오류 페이지가 오면 실패로 처리해.”</div>
@@ -262,7 +263,7 @@ HTML = f"""<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>{ar
 </td></tr>
 
 <tr class="keeprow"><td class="k top">분석도구<br>및<br>참고문헌</td><td class="v refs">
-<p><b>분석도구.</b> Python 3.13(pandas, statsmodels, scipy, matplotlib), rdhub v0.1(연구자료 수집 도구 서버, 자체 개발), Claude(Anthropic).<br>
+<p><b>분석도구.</b> Python 3.13(pandas, statsmodels, scipy, matplotlib), rdhub v0.1(연구자료 수집 도구 서버, 자체 개발), Claude(Anthropic), ChatGPT(OpenAI).<br>
 <b>분석 코드·수집 로그·데이터 목록:</b><br>{CODE_LINK}</p>
 <p style="margin-bottom:0"><b>참고문헌·자료</b></p>
 <ol>
